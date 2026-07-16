@@ -17,13 +17,6 @@ function ProductList() {
             preco: "R$399,90",
             loja: "Amazon",
             imagem: "https://placehold.co/250x180"
-        },
-        {
-            id: 3,
-            nome: "Monitor LG 24",
-            preco: "R$899,90",
-            loja: "Mercado Livre",
-            imagem: "https://placehold.co/250x180"
         }
     ];
 
