@@ -2,13 +2,27 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav>
-      <h1>ShopLens</h1>
-      <div>
-        <a href="#">Login</a>
-        <a href="#">Cadastrar</a>
+    <header className="navbar">
+      <div className="navbar-container">
+        <div className="logo">
+          <div className="logo-icon">🔎</div>
+
+          <h1>
+            Shop<span>Lens</span>
+          </h1>
+        </div>
+
+        <nav className="menu">
+          <a href="#">Início</a>
+
+          <a href="#">Produtos</a>
+
+          <a href="#">Favoritos</a>
+
+          <button className="user-button">Entrar</button>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 }
 
