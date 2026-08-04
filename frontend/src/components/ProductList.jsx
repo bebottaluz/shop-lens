@@ -22,8 +22,12 @@ function ProductList({ atualizar, pesquisa, ordenacao }) {
   const produtosFiltrados = useMemo(() => {
     const lista = produtos.filter((produto) => {
       return (
-        produto.nome.toLowerCase().includes(pesquisa.toLowerCase()) ||
-        produto.loja.toLowerCase().includes(pesquisa.toLowerCase())
+        (produto.nome ?? "")
+  .toLowerCase()
+  .includes(pesquisa.toLowerCase()) ||
+(produto.loja ?? "")
+  .toLowerCase()
+  .includes(pesquisa.toLowerCase())
       );
     });
 
