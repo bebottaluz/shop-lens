@@ -4,7 +4,13 @@
     {
       "label": "Start Backend",
       "type": "shell",
-      "command": "npm --workspace backend run start:dev",
+      "command": "npm.cmd",
+      "args": [
+        "--workspace",
+        "backend",
+        "run",
+        "start:dev"
+      ],
       "options": {
         "cwd": "${workspaceFolder}"
       },
@@ -14,7 +20,13 @@
     {
       "label": "Start Frontend",
       "type": "shell",
-      "command": "npm --workspace frontend run dev",
+      "command": "npm.cmd",
+      "args": [
+        "--workspace",
+        "frontend",
+        "run",
+        "dev"
+      ],
       "options": {
         "cwd": "${workspaceFolder}"
       },
